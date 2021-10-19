@@ -11,7 +11,7 @@ public class ClienteSocket {
         PrintStream saida = null;
 
         try {
-            cliente = new Socket("172.16.1.251", 7000);
+            cliente = new Socket("127.0.0.1", 7000);
 
             saida = new PrintStream(cliente.getOutputStream());
 

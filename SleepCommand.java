@@ -9,7 +9,6 @@ public class SleepCommand implements Command {
 
     @Override
     public synchronized void execute() throws InterruptedException {
-        System.out.println("Bem dormido");
         t.sleep(tempo);
     }
 }

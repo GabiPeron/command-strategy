@@ -7,8 +7,6 @@ public class WaitCommand implements Command {
 
     @Override
     public synchronized void execute() throws InterruptedException  {
-        System.out.println("Espera feio");
-        
         synchronized(t) {
             t.wait();
         }

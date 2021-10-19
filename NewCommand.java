@@ -5,7 +5,6 @@ public class NewCommand extends Thread implements Command  {
 
     @Override
     public synchronized void execute() {
-        System.out.println("Saindo meu patrão");
         start();
     }
 

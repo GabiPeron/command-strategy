@@ -7,8 +7,6 @@ public class NotifyCommand implements Command {
 
     @Override
     public synchronized void execute() throws InterruptedException {
-        System.out.println("Wii Wii Wii");
-
         synchronized(t) {
             t.notify();
         }
